@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "bdb14b00-3ceb-472b-85a1-e01324644c2a",
+		"name": "Node-Express-Mongo-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Mens",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"ranking\" : 1,\r\n            \"name\" : \"Christian COLEMAN\",\r\n            \"dob\" : \"03 MAY 1995\",\r\n            \"country\" : \"USA\",\r\n            \"score\" : \"1477\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/mens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mens Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/mens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Record By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/men/615d1333b232fd34c9022c49",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"men",
+						"615d1333b232fd34c9022c49"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Mens",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Christian COLEMAN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/mens/615d1333b232fd34c9022c49",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mens",
+						"615d1333b232fd34c9022c49"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/mens/615d1333b232fd34c9022c49",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mens",
+						"615d1333b232fd34c9022c49"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
