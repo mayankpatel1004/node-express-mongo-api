@@ -1,7 +1,8 @@
 # node-express-mongo-api
 This repository represent coding of node express mongo api
 
-Id CommandLine
+```bash
+ Id CommandLine
 -------------
    1 npm init -y
    2 npm i express
@@ -15,3 +16,4 @@ Id CommandLine
   10 type null > app.js
   11 cd ..
   12 npm run dev
+```
